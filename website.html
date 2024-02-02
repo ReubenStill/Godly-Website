@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <style>
+        body {
+            background-color: #ff00ff;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #00ffff;
+        }
+
+        h1 {
+            color: #ff0000;
+            font-size: 3em;
+        }
+
+        nav {
+            background-color: #00ff00;
+            padding: 10px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            text-align: center;
+        }
+
+        nav a {
+            color: #000;
+            font-size: 2em;
+            margin: 10px;
+            text-decoration: none;
+            display: inline-block;
+            padding: 5px;
+            border: 2px solid #000;
+            border-radius: 5px;
+            background-color: #ffff00;
+        }
+
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .whirly {
+            animation: spin 3s linear infinite;
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+          nav a:hover {
+              transform: scale(1.2);
+          }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        
+    
+
+    <nav>
+        <a href="#" class="whirly">Home</a>
+        <a href="#" class="whirly">About</a>
+        <a href="#" class="whirly">Contact</a>
+    </nav>
+
+    <main>
+      <h1>Terribly Designed Website</h1>
+        <p>This website is intentionally poorly designed for a humorous effect.</p>
+        <img src="https://media.giphy.com/media/3o85xp3ivDJD5PX3Py/giphy.gif" alt="Animated GIF" class="whirly">
+    </main>
+</body>
+</html>
